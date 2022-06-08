@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: #fff;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #5b5766;
     font-size: 1.8rem;
 }
@@ -21,7 +21,135 @@ ul {
 h1,
 h2,
 h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: #554d89;
+}
+
+.btn {
+    border: none;
+    text-decoration: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: solid 1px #6852ed;
+    font-size: 1.4rem;
+    color: #6852ed;
+}
+
+.divider {
+    border: none;
+    border-bottom: 1px solid #E1E4ED;
+}
+
+.wrapper {
+    width: 1146px;
+    margin: 0 auto;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4rem 0 1.7rem;
+    font-size: 1.6rem;
+}
+
+.top-header__text {
+    color: #716c80;
+}
+
+.top-header__phone {
+    color: #716c80;
+    text-decoration: none;
+}
+
+.top-header__phone:hover {
+    text-decoration: underline;
+}
+
+.top-header__phone::before {
+    content: '\f879';
+    font-family: FontAwesome;
+    margin-right: 0.8rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    display: block;
+    margin-right: 5.8rem;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu-item {
+    margin-right: 3rem;
+    position: relative;
+    padding: 1.8rem 0;
+}
+
+.header__menu-item:last-child {
+    margin-right: 0;
+}
+
+.header__submenu {
+    display: none;
+    position: absolute;
+    top: 5.4rem;
+    left: -3rem;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #e1e4ed;
+    background-color: #fff;
+}
+
+.header__menu-item:hover .header__submenu {
+    display: block;
+}
+
+.header__submenu>.header__menu-item {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.header__submenu>.header__menu-item:last {
+    margin-bottom: 0;
+}
+
+.header__menu-link {
+    color: #5b5766;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.header__menu-link:hover {
+    color: #554d89;
+    text-shadow: 0 0 1rem #554d89;
+}
+
+.header__menu-link_active {
+    color: #554d89;
+    font-weight: 700;
+}
+
+.header-actions__text {
+    display: inline-block;
+    margin: 0 0.5rem;
 }
